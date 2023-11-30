@@ -183,7 +183,7 @@ footer {
 
 .footer__NewsletterLabel {
   color: var(--color-white);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -204,9 +204,18 @@ footer {
 input[type=email] {
   width: 60%;
   background-color: var(--color-dark-grey);
-  height: 2rem;
+  height: 3rem;
+  padding-bottom: 2rem;
   border-style: none;
+  border-bottom: 1px solid var(--color-white);
 }
+
+input[type=email]::placeholder {
+  color: var(--color-white);
+  font-size: 0.7rem;
+}
+
+
 
 .footer__ListHeaders {
   font-size: var(--font-size-footer-list-headline);
@@ -230,4 +239,8 @@ input[type=email] {
   text-align: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+.footer__List {
+  font-size: 0.8rem;
 }
