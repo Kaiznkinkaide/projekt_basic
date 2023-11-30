@@ -128,22 +128,27 @@ footer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-area: "newsletter newsletter newsletter socials initiatives offices";
+  width: 100%;
 }
 
 .newsletter {
   grid-area: newsletter;
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .socials {
   grid-area: socials;
+  width: 20%;
 }
 
 .initiatives {
   grid-area: initiatives;
+  width: 20%;
 }
 
 .offices {
   grid-area: offices;
+  width: 20%;
 }
