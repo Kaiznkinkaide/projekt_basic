@@ -93,5 +93,20 @@
     text-transform: uppercase;
 }
 
+/* Section Engagement */
+
+.engagement {
+    display: flex;
+    flex-direction: column;
+}
+
+.engagement__ScrollFrame {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
 
 
