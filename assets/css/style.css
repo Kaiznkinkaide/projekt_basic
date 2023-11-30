@@ -41,6 +41,7 @@ html.lenis {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 html {
@@ -55,6 +56,7 @@ html {
   --color-white: white;
   --color-pink: #f9cdcd;
   --color-dark-grey: #252422;
+  --color-light-grey: #5E5E5E;
 
   /* Font Sizes */
 
@@ -64,6 +66,7 @@ html {
   --font-size-footer-headline: 1.675rem;
   --font-size-footer-list-headline: 1.075rem;
   --font-size-footer-list: 0.8rem;
+  --font-size-footer-bottom: 0.625rem;
 }
 
 /* Header Styles */
@@ -111,8 +114,11 @@ header nav ul li a {
 
 footer {
   width: 100%;
-  height: 20rem;
   background-color: var(--color-dark-grey);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .logo__Footer img {
@@ -131,24 +137,35 @@ footer {
   width: 100%;
 }
 
+.footer__Mid ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
 .newsletter {
   grid-area: newsletter;
   display: flex;
   flex-direction: column;
-  width: 40%;
 }
 
 .socials {
   grid-area: socials;
-  width: 20%;
 }
 
 .initiatives {
   grid-area: initiatives;
-  width: 20%;
 }
 
 .offices {
   grid-area: offices;
-  width: 20%;
+}
+
+.footer__Bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__Bottom p {
+  color: var(--color-light-grey);
+  font-size: var(--font-size-footer-bottom);
 }
