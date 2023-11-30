@@ -46,8 +46,6 @@ html.lenis {
 
 html {
   font-family: "SctoRegular";
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 :root {
@@ -57,7 +55,7 @@ html {
   --color-white: white;
   --color-pink: #f9cdcd;
   --color-dark-grey: #252422;
-  --color-light-grey: #5E5E5E;
+  --color-light-grey: #5e5e5e;
 
   /* Font Sizes */
 
@@ -209,7 +207,7 @@ footer {
   gap: 1rem;
 }
 
-input[type=email] {
+input[type="email"] {
   width: 60%;
   background-color: var(--color-dark-grey);
   height: 3rem;
@@ -218,17 +216,15 @@ input[type=email] {
   border-bottom: 1px solid var(--color-white);
 }
 
-input[type=email]::placeholder {
+input[type="email"]::placeholder {
   color: var(--color-white);
   font-size: 0.7rem;
 }
 
-
-
 .footer__ListHeaders {
   font-size: var(--font-size-footer-list-headline);
   color: var(--color-white);
-  font-family: 'SctoBold';
+  font-family: "SctoBold";
   display: flex;
   align-items: center;
 }
