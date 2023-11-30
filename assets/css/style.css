@@ -1,17 +1,17 @@
 @font-face {
-    font-family: "SctoRegular";
-    src: url(../fonts/SctoGroteskA-Regular.woff2);
-  }
+  font-family: "SctoRegular";
+  src: url(../fonts/SctoGroteskA-Regular.woff2);
+}
 
 @font-face {
-    font-family: "SctoMedium";
-    src: url(../fonts/SctoGroteskA-Medium.woff2);
-  }
+  font-family: "SctoMedium";
+  src: url(../fonts/SctoGroteskA-Medium.woff2);
+}
 
 @font-face {
-    font-family: "SctoBold";
-    src: url(../fonts/SctoGroteskA-Bold.woff2);
-  }
+  font-family: "SctoBold";
+  src: url(../fonts/SctoGroteskA-Bold.woff2);
+}
 
 /* ----- Smooth Scrolling ----- */
 
@@ -44,8 +44,8 @@ html.lenis {
 }
 
 html {
-    font-family: "SctoRegular";
-    padding: 0 2rem 0 2rem;
+  font-family: "SctoRegular";
+  padding: 0 2rem 0 2rem;
 }
 
 :root {
@@ -61,6 +61,9 @@ html {
   --font-size-h1: 5rem;
   --font-size-h2: 2.3rem;
   --font-size-nav: 0.8rem;
+  --font-size-footer-headline: 1.675rem;
+  --font-size-footer-list-headline: 1.075rem;
+  --font-size-footer-list: 0.8rem;
 }
 
 /* Header Styles */
@@ -82,10 +85,10 @@ header nav ul {
 }
 
 header nav ul li a {
-    font-size: var(--font-size-nav);
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--color-black);
+  font-size: var(--font-size-nav);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .logo img {
@@ -93,15 +96,54 @@ header nav ul li a {
 }
 
 .dots {
-    display: flex;
-    gap: 0.2rem;
+  display: flex;
+  gap: 0.2rem;
 }
 
 .dots div {
-    background-color: var(--color-black);
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 0.5rem;
+  background-color: var(--color-black);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 /* Footer Styles */
+
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: var(--color-dark-grey);
+}
+
+.logo__Footer img {
+  height: 0.8rem;
+}
+
+.footer__Top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__Mid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-area: "newsletter newsletter newsletter socials initiatives offices";
+}
+
+.footer__Newsletter {
+  grid-area: newsletter;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__Socials {
+  grid-area: socials;
+}
+
+.footer__Initiatives {
+  grid-area: initiatives;
+}
+
+.footer__Offices {
+  grid-area: offices;
+}
