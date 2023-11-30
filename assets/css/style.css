@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+:root {
+    /* Colors /
+    --color-black: black;
+    --color-white: white;
+    --color-pink: #F9CDCD;
+    --color-dark-grey: #252422;
+    / Fonts */
+    --font-size-h1: 5rem;
+    --font-size-h2: 2.3rem;
+}
