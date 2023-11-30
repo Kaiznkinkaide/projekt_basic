@@ -46,6 +46,8 @@ html.lenis {
 
 html {
   font-family: "SctoRegular";
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 :root {
@@ -125,8 +127,8 @@ footer {
 }
 
 .footer__Top {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .footer__Mid {
@@ -135,6 +137,7 @@ footer {
   grid-template-areas: "newsletter newsletter newsletter socials initiatives offices";
   width: 100%;
   gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .footer__Mid ul li a {
@@ -174,7 +177,7 @@ footer {
 .footer__Headline {
   color: var(--color-white);
   font-size: var(--font-size-footer-headline);
-  width: 35%;
+  max-width: 65%;
 }
 
 .footer__Connect {
