@@ -50,6 +50,10 @@ html {
   margin: 0 auto;
 }
 
+main {
+  padding: 0 2rem 0 2rem;
+}
+
 :root {
   /* Fonts */
 
@@ -73,7 +77,8 @@ html {
 /* Header Styles */
 
 header {
-  padding: 1rem;
+  padding: 2rem;
+  /* padding-left: 4rem; */
 }
 
 header nav {
