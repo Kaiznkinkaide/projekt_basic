@@ -127,7 +127,7 @@ footer {
 .footer__Mid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-area: "newsletter newsletter newsletter socials initiatives offices";
+  grid-template-areas: "newsletter newsletter newsletter socials initiatives offices";
   width: 100%;
 }
 
