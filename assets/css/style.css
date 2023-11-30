@@ -1,7 +1,17 @@
 @font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter/Inter-VariableFont_slnt\wght.ttf);
-}
+    font-family: "SctoRegular";
+    src: url(../fonts/SctoGroteskA-Regular.woff2);
+  }
+
+@font-face {
+    font-family: "SctoMedium";
+    src: url(../fonts/SctoGroteskA-Medium.woff2);
+  }
+
+@font-face {
+    font-family: "SctoBold";
+    src: url(../fonts/SctoGroteskA-Bold.woff2);
+  }
 
 /* ----- Smooth Scrolling ----- */
 
@@ -31,16 +41,67 @@ html.lenis {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+}
+
+html {
+    font-family: "SctoRegular";
+    padding: 0 2rem 0 2rem;
 }
 
 :root {
-  /* Colors /
-    --color-black: black;
-    --color-white: white;
-    --color-pink: #F9CDCD;
-    --color-dark-grey: #252422;
-    / Fonts */
+  /* Fonts */
+
+  --color-black: black;
+  --color-white: white;
+  --color-pink: #f9cdcd;
+  --color-dark-grey: #252422;
+
+  /* Font Sizes */
+
   --font-size-h1: 5rem;
   --font-size-h2: 2.3rem;
+  --font-size-nav: 0.8rem;
 }
+
+/* Header Styles */
+
+header {
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+header nav ul li a {
+    font-size: var(--font-size-nav);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.logo img {
+  height: 0.8rem;
+}
+
+.dots {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.dots div {
+    background-color: var(--color-black);
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Footer Styles */
