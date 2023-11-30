@@ -51,9 +51,47 @@
 /* Basic Section */
 
 .basic {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     border-top: 1px solid var(--color-light-grey);
     border-bottom: 1px solid var(--color-light-grey);
-    /* margin: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
 }
+
+.basic__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.basic__Logo img {
+    width: 25rem;
+}
+
+.basic__Headline {
+    font-size: 2rem;
+    font-family: "SctoBold";
+    width: 90%;
+}
+
+.basic__Logo {
+    padding-top: 2rem;
+}
+
+.seeWorkButton {
+    text-decoration: none;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    border-radius: 2rem;
+    text-align: center;
+    width: 20%;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+
+
