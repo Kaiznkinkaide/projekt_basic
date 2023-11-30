@@ -30,7 +30,7 @@
     font-family: "SctoBold";
 }
 
-.hereTest {
+.hereText {
     display: flex;
     align-items: center;
 }
@@ -138,6 +138,10 @@
 .engagement__Line {
     border: 1px solid var(--color-black);
     width: 10%;
+}
+
+.engagement__Heading {
+    font-size: 1.3rem;
 }
 
 
