@@ -130,20 +130,20 @@ footer {
   grid-area: "newsletter newsletter newsletter socials initiatives offices";
 }
 
-.footer__Newsletter {
+.newsletter {
   grid-area: newsletter;
   display: flex;
   flex-direction: column;
 }
 
-.footer__Socials {
+.socials {
   grid-area: socials;
 }
 
-.footer__Initiatives {
+.initiatives {
   grid-area: initiatives;
 }
 
-.footer__Offices {
+.offices {
   grid-area: offices;
 }
