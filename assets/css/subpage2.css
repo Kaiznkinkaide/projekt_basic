@@ -1,100 +1,137 @@
 @import "style.css";
 @import url("style.css");
 
+/* Footer Styles */
 
-header {
+footer {
+    width: 100%;
+    background-color: var(--color-white);
     padding: 2rem;
-    background-color: var(--color-dark-grey);
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header nav ul {
-    display: flex;
-    gap: 5rem;
-    list-style: none;
-}
-
-header nav ul li a {
-    font-size: var(--font-size-nav);
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--color-pink);
-}
-
-.logo a img {
-    height: 0.8rem;
-}
-
-.dots {
-    display: flex;
-    gap: 0.2rem;
-}
-
-.dots div {
-    background-color: var(--color-pink);
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-/* ------ section value------ */
-
-.cultural {
-    display: flex;
-    background-color: var(--color-dark-grey);
-    color: var(--color-pink);
-    padding: 2rem;
-    justify-content: space-between;
-}
-
-.cultural h1 {
-    width: 20vw;
-    font-family: "SctoBold";
-    text-transform: uppercase;
-    font-size: var(--font-size-h1);
-}
-
-.value {
-    padding: 0 20% 20% 0;
-    height: 70vh;
-}
-
-
-.into {
     display: flex;
     flex-direction: column;
-    align-self: self-end;
-}
-
-.intoHeadline {
-    font-family: "SctoBold";
-    text-transform: uppercase;
-    font-size: var(--font-size-h1);
+    gap: 2rem;
+  }
+  
+  .logo__Footer img {
+    height: 0.8rem;
+  }
+  
+  .footer__Top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer__Mid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "newsletter newsletter newsletter socials initiatives offices";
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  
+  .footer__Mid ul li a {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+  
+  .newsletter {
+    grid-area: newsletter;
     display: flex;
-    align-items: flex-start;
-}
-
-.intoHeadline::before {
-    content: "⬤";
-    color: var(--color-pink);
-    margin-right: 0.3rem;
-    font-size: 2rem;
-}
-
-.into h1 {
-    width: 20vw;
-    text-transform: uppercase;
+    flex-direction: column;
+  }
+  
+  .socials {
+    grid-area: socials;
+  }
+  
+  .initiatives {
+    grid-area: initiatives;
+  }
+  
+  .offices {
+    grid-area: offices;
+  }
+  
+  .footer__Bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1.5rem;
+  }
+  
+  .footer__Bottom p {
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-footer-bottom);
+  }
+  
+  .footer__Headline {
+    color: var(--color-black);
+    font-size: var(--font-size-footer-headline);
+    max-width: 65%;
+  }
+  
+  .footer__Connect {
+    border-bottom: 1px solid white;
+  }
+  
+  .footer__NewsletterLabel {
+    color: var(--color-black);
+    font-size: 0.8rem;
     margin-bottom: 1rem;
     display: flex;
-    align-items: flex-start;
-}
-
-.intoText {
-    font-size: 1.2rem;
-    width: 34vw;
-}
+    align-items: center;
+  }
+  
+  .footer__NewsletterLabel::before {
+    content: "⬤";
+    color: var(--color-black);
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+  }
+  
+  .footer__NewsletterForm {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  input[type="email"] {
+    width: 60%;
+    background-color: var(--color-white);
+    height: 3rem;
+    padding-bottom: 2rem;
+    border-style: none;
+    border-bottom: 1px solid var(--color-black);
+  }
+  
+  input[type="email"]::placeholder {
+    color: var(--color-black);
+    font-size: 0.7rem;
+  }
+  
+  .footer__ListHeaders {
+    font-size: var(--font-size-footer-list-headline);
+    color: var(--color-black);
+    font-family: "SctoBold";
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer__ListHeaders::before {
+    content: "⬤";
+    color: var(--color-black);
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+  }
+  
+  #newsletterButton {
+    background-color: var(--color-white);
+    color: var(--color-dark-grey);
+    border: 1px solid var(--color-black);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .footer__List {
+    font-size: 0.8rem;
+  }
