@@ -1,100 +1,566 @@
 @import "style.css";
 @import url("style.css");
 
+/* Footer Styles */
+
 
 header {
-    padding: 2rem;
-    background-color: var(--color-dark-grey);
+  padding: 2rem;
+  background-color: var(--color-dark-grey);
 }
 
 header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header nav ul {
-    display: flex;
-    gap: 5rem;
-    list-style: none;
+  display: flex;
+  gap: 5rem;
+  list-style: none;
 }
 
 header nav ul li a {
-    font-size: var(--font-size-nav);
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--color-pink);
+  font-size: var(--font-size-nav);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-pink);
 }
 
 .logo a img {
-    height: 0.8rem;
+  height: 0.8rem;
 }
 
 .dots {
-    display: flex;
-    gap: 0.2rem;
+  display: flex;
+  gap: 0.2rem;
 }
 
 .dots div {
-    background-color: var(--color-pink);
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 0.5rem;
+  background-color: var(--color-pink);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 /* ------ section value------ */
 
 .cultural {
-    display: flex;
-    background-color: var(--color-dark-grey);
-    color: var(--color-pink);
-    padding: 2rem;
-    justify-content: space-between;
+  display: flex;
+  background-color: var(--color-dark-grey);
+  color: var(--color-pink);
+  padding: 2rem;
+  justify-content: space-between;
 }
 
 .cultural h1 {
-    width: 20vw;
-    font-family: "SctoBold";
-    text-transform: uppercase;
-    font-size: var(--font-size-h1);
+  width: 20vw;
+  font-family: "SctoBold";
+  text-transform: uppercase;
+  font-size: var(--font-size-h1);
 }
 
 .value {
-    padding: 0 20% 20% 0;
-    height: 70vh;
+  padding: 0 20% 20% 0;
+  height: 57.5vh;
 }
 
 
 .into {
-    display: flex;
-    flex-direction: column;
-    align-self: self-end;
+  display: flex;
+  flex-direction: column;
+  align-self: self-end;
 }
 
 .intoHeadline {
-    font-family: "SctoBold";
-    text-transform: uppercase;
-    font-size: var(--font-size-h1);
-    display: flex;
-    align-items: flex-start;
+  font-family: "SctoBold";
+  text-transform: uppercase;
+  font-size: var(--font-size-h1);
+  display: flex;
+  align-items: flex-start;
 }
 
 .intoHeadline::before {
-    content: "⬤";
-    color: var(--color-pink);
-    margin-right: 0.3rem;
-    font-size: 2rem;
+  content: "⬤";
+  color: var(--color-pink);
+  margin-right: 0.3rem;
+  font-size: 2rem;
 }
 
 .into h1 {
-    width: 20vw;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: flex-start;
+  width: 20vw;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .intoText {
-    font-size: 1.2rem;
-    width: 34vw;
+  font-size: 1.2rem;
+  width: 34vw;
+}
+
+/* ------section_gallery------- */
+
+.horizontal__Line {
+  border: 1px solid var(--color-pink);
+  width: 95%;
+}
+
+.horizontal__LineFrame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+}
+
+.gallery {
+  padding-bottom: 20vh;
+  background-color: var(--color-dark-grey);
+}
+
+.galleryFrame {
+  min-height: 80vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+}
+
+.galleryFrame p {
+
+  color: var(--color-pink);
+  width: 12%;
+  font-size: 0.5625rem;
+  align-self: center;
+
+}
+
+.pictures {
+  padding-left: 10%;
+
+}
+
+.pictures img {
+  height: 50vh;
+}
+
+.pictureOne {
+  position: absolute;
+  top: 5%;
+  z-index: 3;
+}
+
+.pictureTwo {
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  z-index: 2;
+}
+
+.pictureThree {
+  display: flex;
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  z-index: 1;
+}
+
+.pictureThree p {
+  align-self: flex-start;
+}
+
+.pictureFour {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  z-index: 0;
+}
+
+.pictureOne:hover,
+.pictureTwo:hover,
+.pictureThree:hover,
+.pictureFour:hover {
+  z-index: 4;
+}
+
+/* -----section_basic----- */
+
+.basic {
+  width: 100%;
+  padding: 0 2rem 0 2rem;
+  background-color: var(--color-dark-grey);
+}
+
+.basic img {
+  height: 10vh;
+  margin: -1.5rem 0 -1.5rem 0;
+}
+
+/* ------section_agency */
+
+
+.agency {
+  gap: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "secTag aTag . "
+    "headline people offices"
+    " . years growth"
+    " . services ranking";
+  background-color: var(--color-dark-grey);
+  color: var(--color-pink);
+  width: 100%;
+  padding: 0 2rem 10rem 2rem;
+
+}
+
+.secTag {
+  grid-area: secTag;
+  margin-bottom: -10vh;
+}
+
+.aTag {
+  grid-area: aTag;
+}
+
+.agencyHeadline {
+  grid-area: headline;
+}
+
+.people {
+  grid-area: people;
+}
+
+.offices {
+  grid-area: offices;
+}
+
+.years {
+  grid-area: years;
+}
+
+.growth {
+  grid-area: growth;
+}
+
+.services {
+  grid-area: services;
+}
+
+.ranking {
+  grid-area: ranking;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.giantNummber {
+  font-size: 3.6rem;
+  font-family: "SctoBold";
+}
+
+.box h1 {
+  font-size: 1.5rem;
+  font-family: "SctoBold";
+}
+
+
+.cotegorieText {
+  font-size: 0.9rem;
+  width: 65%;
+}
+
+.agencyHeadline {
+  font-size: 2.2rem;
+  width: 60%;
+}
+
+.secTag,
+.aTag {
+  font-size: 0.7rem;
+}
+
+.capabilitiesText {
+  font-size: 0.875rem;
+}
+
+/* ------section_Capabilities */
+
+
+.capabilities {
+  gap: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "secTag aTag . "
+    "headlineB strategic user"
+    " . brand technology"
+    " . content ."
+  ;
+  background-color: var(--color-dark-grey);
+  color: var(--color-pink);
+  width: 100%;
+  padding: 0 2rem 10rem 2rem;
+
+}
+
+.secTag {
+  grid-area: secTag;
+
+}
+
+.aTag {
+  grid-area: aTag;
+}
+
+.capabilitesHeadline {
+  grid-area: headlineB;
+  font-size: 2.2rem;
+}
+
+
+
+.strategic {
+  grid-area: strategic;
+}
+
+.user {
+  grid-area: user;
+}
+
+.brand {
+  grid-area: brand;
+}
+
+.technology {
+  grid-area: technology;
+}
+
+.content {
+  grid-area: content;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/* -----section-awards----- */
+
+.awards {
+  gap: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "secTag aTag . "
+    "headlineC text ."
+  ;
+  background-color: var(--color-dark-grey);
+  color: var(--color-pink);
+  width: 100%;
+  padding: 0 2rem 10rem 2rem;
+}
+
+.secTag {
+  grid-area: secTag;
+
+}
+
+.aTag {
+  grid-area: aTag;
+}
+
+.awardsHeadline {
+  grid-area: headlineC;
+}
+
+.awardsText {
+  grid-area: text;
+}
+
+.box h1 {
+  font-size: 1.5rem;
+  font-family: "SctoBold";
+}
+
+
+.awardsText {
+  font-size: 1.9rem;
+  width: 30vw;
+}
+
+.awardsHeadline {
+  font-size: 2.2rem;
+}
+
+.secTag,
+.aTag {
+  font-size: 0.7rem;
+}
+
+.awardsText a {
+  color: var(--color-pink);
+  border: 0.5px solid var(--color-white);
+  width: 20%;
+  font-size: 0.625rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3px 7px 3px 3px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---- foter-------- */
+footer {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.logo__Footer img {
+  height: 0.8rem;
+}
+
+.footer__Top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__Mid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "newsletter newsletter newsletter socials initiatives offices";
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.footer__Mid ul li a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.newsletter {
+  grid-area: newsletter;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  grid-area: socials;
+}
+
+.initiatives {
+  grid-area: initiatives;
+}
+
+.offices {
+  grid-area: offices;
+}
+
+.footer__Bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1.5rem;
+}
+
+.footer__Bottom p {
+  color: var(--color-dark-grey);
+  font-size: var(--font-size-footer-bottom);
+}
+
+.footer__Headline {
+  color: var(--color-black);
+  font-size: var(--font-size-footer-headline);
+  max-width: 65%;
+}
+
+.footer__Connect {
+  border-bottom: 1px solid white;
+}
+
+.footer__NewsletterLabel {
+  color: var(--color-black);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__NewsletterLabel::before {
+  content: "⬤";
+  color: var(--color-black);
+  margin-right: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.footer__NewsletterForm {
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="email"] {
+  width: 60%;
+  background-color: var(--color-white);
+  height: 3rem;
+  padding-bottom: 2rem;
+  border-style: none;
+  border-bottom: 1px solid var(--color-black);
+}
+
+input[type="email"]::placeholder {
+  color: var(--color-black);
+  font-size: 0.7rem;
+}
+
+.footer__ListHeaders {
+  font-size: var(--font-size-footer-list-headline);
+  color: var(--color-black);
+  font-family: "SctoBold";
+  display: flex;
+  align-items: center;
+}
+
+.footer__ListHeaders::before {
+  content: "⬤";
+  color: var(--color-black);
+  margin-right: 0.3rem;
+  font-size: 0.7rem;
+}
+
+#newsletterButton {
+  background-color: var(--color-white);
+  color: var(--color-dark-grey);
+  border: 1px solid var(--color-black);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.footer__List {
+  font-size: 0.8rem;
 }
