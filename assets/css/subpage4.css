@@ -199,9 +199,9 @@ footer {
 
 .info {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   padding: 2rem;
-  gap: 2rem;
+  gap: 5rem;
   background-color: var(--color-dark-grey);
 }
 
@@ -256,7 +256,7 @@ footer {
 .featured__OneText {
   font-size: 2rem;
   padding-top: 2rem;
-  width: 70%;
+  width: 100%;
 }
 
 .featured__OneInfo {
