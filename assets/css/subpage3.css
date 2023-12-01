@@ -37,14 +37,14 @@
 }
 
 .featured__OneImage {
-  width: 30rem;
-  height: auto;
+  width: 35%;
+  height: fit-content;
 }
 
 .featured__OneText {
   font-size: 2rem;
   padding-top: 2rem;
-  width: 40rem;
+  width: 70%;
 }
 
 .featured__OneInfo {
