@@ -12,6 +12,10 @@ h1 span {
     font-size: 2.7rem;
 }
 
+.grid {
+    margin-bottom: 2rem;
+}
+
 .easy__to {
     width: 100%;
     display: flex;
@@ -29,20 +33,70 @@ h1 span {
 .real__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding: 0 2rem;
 }
 
 .real__grid__hero {
     display: flex;
     flex-direction: column;
     border-right: 1px solid var(--color-black);
+    padding: 0 5rem;
+}
+
+.date {
+    margin-bottom: 4rem;
+}
+
+.grid__headline {
+    margin-bottom: 1rem;
+    font-family: 'SctoBold';
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    width: 15rem;
+}
+
+.grid__herotext {
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-size: 0.8rem;
+}
+
+.grid__herobutton {
+    margin-bottom: 4rem;
 }
 
 .grid__ad {
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    margin: 0.5rem;
+}
+
+.grid__ad h3 {
+    font-family: 'SctoBold';
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.grid__ad p {
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-size: var(--font-size-nav);
+    width: 70%;
 }
 
 .grid__ad img {
-    width: 70%;
+    width: 80%;
+}
+
+.real__grid a {
+    background-color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-size-nav);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: fit-content;
 }
