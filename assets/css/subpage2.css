@@ -87,8 +87,100 @@
   gap: 1.2rem;
 }
 
+.grid {
+  display: flex;
+}
 
+.border {
+  border-right: 1px solid black;
+  padding: 0 2rem;
+  width: 50%;
+}
 
+hr {
+  grid-area: line;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  color: var(--color-light-grey);
+  font-size: 0.6rem;
+}
+
+.real__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'pic loc'
+  'line line';
+  gap: 5%;
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+
+.real__grid img {
+  grid-area: pic;
+  width: 100%;
+}
+
+.real__grid h3 {
+  grid-area: loc;
+}
+
+.three__column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+.horizontal__Line2 {
+  border: 1px solid var(--color-light-grey);
+  margin: 2rem 0 0.3rem 0;
+  width: 94%;
+}
+
+.horizontal__LineFrame2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.three__headlines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.three__column a {
+  color: var(--color-dark-grey);
+}
+
+.three__column h3 {
+  font-family: 'SctoBold';
+}
+
+input[type="email2"] {
+  width: 100%;
+  background-color: var(--color-white);
+  height: 3rem;
+  padding-bottom: 2rem;
+  border-style: none;
+  border-bottom: 1px solid var(--color-black);
+}
+
+input[type="email2"]::placeholder {
+  color: var(--color-light-grey);
+  font-size: 0.7rem;
+}
+
+.footer__NewsletterLabel2 {
+  text-transform: uppercase;
+}
 
 /* Footer Styles */
 
