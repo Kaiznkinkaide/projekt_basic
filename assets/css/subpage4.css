@@ -1,6 +1,48 @@
 @import "style.css";
 @import url("style.css");
 
+/* Header Styles */
+
+header {
+  padding: 2rem;
+  background-color: var(--color-dark-grey);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-size: var(--font-size-nav);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-pink);
+}
+
+.logo a img {
+  height: 0.8rem;
+}
+
+.dots {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.dots div {
+  background-color: var(--color-pink);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 /* Footer Styles */
 
 footer {
@@ -135,3 +177,103 @@ footer {
   .footer__List {
     font-size: 0.8rem;
   }
+
+  /* Section Thinking */
+
+.thinking {
+  padding: 2rem;
+  background-color: var(--color-dark-grey);
+  text-transform: uppercase;
+  font-family: "SctoBold";
+}
+
+.thinking__Frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-h1);
+  color: var(--color-pink);
+}
+
+/* Section Info */
+
+.info {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: var(--color-dark-grey);
+}
+
+.brandbeats, .applied {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+  color: var(--color-pink);
+}
+
+.brandbeats__Headline, .applied__Headline {
+  font-size: 1.5rem;
+  font-family: "SctoBold";
+}
+
+.brandbeats__Info, .applied__Info {
+  line-height: 1.5;
+}
+
+.spacer {
+  width: 40%;
+}
+
+/* Section ThinkShowcase */
+
+.featured {
+  background-color: var(--color-dark-grey);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.featured__Frame {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featured__One {
+  display: flex;
+  gap: 2rem;
+  color: var(--color-pink);
+}
+
+.featured__OneImage {
+  width: 35%;
+  height: fit-content;
+}
+
+.featured__OneText {
+  font-size: 2rem;
+  padding-top: 2rem;
+  width: 70%;
+}
+
+.featured__OneInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-pink);
+  width: 100%;
+}
+
+.arrow__Image {
+  width: 3rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.featured__Headline {
+  font-size: var(--font-size-h2);
+  color: var(--color-pink);
+}
