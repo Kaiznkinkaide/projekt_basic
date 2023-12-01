@@ -1,2 +1,48 @@
 @import "style.css";
 @import url("style.css");
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-family: 'SctoBold';
+    text-transform: uppercase;
+    max-width: 35%;
+}
+
+h1 span {
+    font-size: 2.7rem;
+}
+
+.easy__to {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.easy__to p{
+    max-width: 30%;
+    align-self: flex-end;
+    line-height: 1;
+    font-size: 0.9rem;
+}
+
+.real__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.real__grid__hero {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--color-black);
+}
+
+.grid__ad {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.grid__ad img {
+    width: 70%;
+}
