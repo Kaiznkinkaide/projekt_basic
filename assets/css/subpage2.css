@@ -1,6 +1,95 @@
 @import "style.css";
 @import url("style.css");
 
+/* Hero Section */
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: "image info";
+  width: 100%;
+  gap: 2rem;
+  height: 50rem;
+}
+
+.image {
+  grid-area: image;
+  background: url(../img/Contact-Header.jpg) center/cover no-repeat;
+}
+
+.contact__Info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contact__Headline {
+  font-size: var(--font-size-h1);
+  font-family: "SctoBold";
+}
+
+.contact__Subline {
+  width: 30%;
+  font-size: 0.8rem;
+}
+
+.newBusiness, .press, .general, .joinUs {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "SctoBold";
+}
+
+.newBusinessMail, .pressMail, .generalMail, .joinUsMail {
+  color: var(--color-light-grey);
+}
+
+.contact__Grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: "dot business general"
+  ". press join";
+  gap: 2rem;
+}
+
+.contact__Dot {
+  grid-area: dot;
+  font-size: 2rem;
+}
+
+.business__Frame {
+  grid-area: business;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.press__Frame {
+  grid-area: press;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.general__Frame {
+  grid-area: general;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.join__Frame {
+  grid-area: join;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+
+
+
 /* Footer Styles */
 
 footer {
